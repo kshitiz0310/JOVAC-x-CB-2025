@@ -68,6 +68,8 @@ console.log(outputFilter);
 
 // Promises
 
+/*
+
 const cart = ["shoes", "watch", "pants", "glasses", "deodrants", "shirts"];
 
 //callback
@@ -91,3 +93,6 @@ createOrder(cart)
 .then(function(paymentInfo){
     return upadteWallet(paymentInfo);
 })
+
+*/
+
