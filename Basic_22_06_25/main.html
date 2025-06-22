@@ -1,0 +1,36 @@
+<!-- bubbling.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Bubbling Example</title>
+</head>
+<body>
+  <div id="grandparent" style="padding: 20px; background-color: lightblue;">
+    Grandparent
+    <div id="parent" style="padding: 20px; background-color: lightgreen;">
+      Parent
+      <div id="child" style="padding: 20px; background-color: lightcoral;">
+        Child
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const grandparent = document.getElementById('grandparent');
+    const parent = document.getElementById('parent');
+    const child = document.getElementById('child');
+
+    grandparent.addEventListener('click', () => {
+        console.log('Grandparent clicked');
+    });
+
+    parent.addEventListener('click', () => {
+        console.log('Parent clicked');
+    });
+
+    child.addEventListener('click', () => {
+        console.log('Child clicked');
+    });
+  </script>
+</body>
+</html>
