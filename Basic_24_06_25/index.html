@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Github Profiles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="getProfile('kshitiz0310')">
+  <div class="container">
+    <input type="text" id="username" placeholder="Search a Github username here" onkeydown="if(event.key === 'Enter') getProfile()"/>
+    <button onclick="getProfile()">Search</button>
+    <div class="card" id="profileCard" style="display: none;">
+      <img id="avatar" src="" alt="Profile Picture"/>
+      <h2 id="name"></h2>
+      <p id="bio"></p>
+      <div class="stats">
+        <span id="following"></span>
+        <span id="followers"></span>
+        <span id="repos"></span>
+      </div>
+      <div class="badges">
+        <a href="https://github.com/kshitiz0310/JOVAC-x-CB-2025" target="_blank" class="badge">JOVAC-x-CB-2025</a>
+      </div>
+      <ul id="repoList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
